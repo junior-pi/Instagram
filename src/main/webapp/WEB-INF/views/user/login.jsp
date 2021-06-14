@@ -27,6 +27,7 @@
                             <div class="email">
                                 <label>
                                     <input type="text" name="email" maxlength="100" required pattern="^.{1,}$">
+<%--                                    aklsdjfjklas--%>
                                     <span>이메일</span>
                                 </label>
                             </div>
