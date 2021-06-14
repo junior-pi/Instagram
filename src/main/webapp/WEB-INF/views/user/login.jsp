@@ -28,6 +28,12 @@
                                 <label>
                                     <input type="text" name="email" maxlength="100" required pattern="^.{1,}$">
                                     <span>이메일</span>
+<%--                                    asdfa--%>
+<%--                                    sdf--%>
+<%--                                    asdf--%>
+
+<%--                                    asdf--%>
+<%--                                    asd--%>
                                 </label>
                             </div>
                             <div class="password">
