@@ -46,7 +46,7 @@
                             <div class="or_line"></div>
                         </div>
                         <form class="forgot">
-                            <a class="forgot_email" href="#">이메일을 잊으셨나요?</a>
+                            <a class="forgot_email" href="#">틀린그림찾기</a>
                             <a class="forgot_password" href="#">비밀번호를 잊으셨나요?</a>
                         </form>
                     </div>
