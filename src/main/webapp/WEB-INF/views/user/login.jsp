@@ -22,7 +22,7 @@
                 </div>
                 <div class="main_right">
                     <div class="login">
-                        <div>NAME : </div>
+                        <div>NAME : minzy</div>
                         <img src="resources/images/instagram_logo_text.png">
                         <form>
                             <div class="email">
