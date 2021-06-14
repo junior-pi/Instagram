@@ -14,7 +14,6 @@
 </head>
 <body class="user-login">
 <main>
-<%--    어쩌고--%>
     <div>
         <section>
             <div>
