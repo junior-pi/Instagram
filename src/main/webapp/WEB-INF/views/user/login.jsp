@@ -23,7 +23,7 @@
                 <div class="main_right">
                     <div class="login">
                         <img src="resources/images/instagram_logo_text.png">
-                        <form>
+                        <form id="registerForm">
                             <div class="email">
                                 <label>
                                     <input type="text" name="email" maxlength="100" required pattern="^.{1,}$">

@@ -191,7 +191,7 @@ body > main > div > section > div > div.main_right > div.register > form > div.s
 }
 
 body > main > div > section > div > div.main_right > div.register > form > div.email > label > input:valid,
-body > main > div > section > div > div.main_right > div.register > form > div.name  > label > input:valid,
+body > main > div > section > div > div.main_right > div.register > form > div.name > label > input:valid,
 body > main > div > section > div > div.main_right > div.register > form > div.nickname > label > input:valid,
 body > main > div > section > div > div.main_right > div.register > form > div.password > label > input:valid,
 body > main > div > section > div > div.main_right > div.register > form > div.passwordCheck > label > input:valid,
@@ -199,7 +199,7 @@ body > main > div > section > div > div.main_right > div.register > form > div.s
     padding: 1.1rem 0.5rem 0.4rem 0.5rem;
 }
 
-body > main > div > section > div > div.main_right > div.register > form > div.email > label > input:valid + span,
+body > main > div > section > div > div.main_right > div.register > form > div.email  > label > input:valid + span,
 body > main > div > section > div > div.main_right > div.register > form > div.name  > label > input:valid + span,
 body > main > div > section > div > div.main_right > div.register > form > div.nickname > label > input:valid + span,
 body > main > div > section > div > div.main_right > div.register > form > div.password > label > input:valid + span,
@@ -208,4 +208,14 @@ body > main > div > section > div > div.main_right > div.register > form > div.s
     top: 0;
     line-height: 100%;
     font-size: 0.65rem;
+}
+
+body > main > div > section > div > div.main_right > div.register > form > div.register_button > input:disabled{
+    background-color: #b2defc;
+    border: none;
+}
+
+body > main > div > section > div > div.main_right > div.register > form > div.register_button > input{
+    background-color: #0094f6;
+    border: none;
 }

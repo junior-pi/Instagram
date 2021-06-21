@@ -27,7 +27,7 @@
                         <form>
                             <div class="email">
                                 <label>
-                                    <input type="email" name="email" maxlength="100" required pattern="^.{1,}$">
+                                    <input type="text" name="email" maxlength="100" required pattern="^.{1,}$">
                                     <span>이메일</span>
                                     <div class="xicon"><img src="/resources/images/icon_x.png"></div>
                                     <div class="checkicon"><img src="/resources/images/icon_check.png"></div>
@@ -74,7 +74,7 @@
                                 </label>
                             </div>
                             <div class="register_button">
-                                <input type="submit" value="가입">
+                                <input type="submit" value="가입" disabled>
                             </div>
                         </form>
                     </div>
