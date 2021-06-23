@@ -1,3 +1,4 @@
+<%@ page import="dev.juniorpi.instagram.securitys.Regex" %>
 <%@ page language="java" contentType="text/html" pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
 <!DOCTYPE HTML>
 <html lang="ko">
@@ -24,10 +25,10 @@
                         <img src="/resources/images/instagram_logo_text.png">
                         <strong class="text">친구들의 사진과 동영상을 보려면 가입하세요.</strong>
                         <div class="line"></div>
-                        <form>
+                        <form id="registerForm">
                             <div class="email">
                                 <label>
-                                    <input type="text" name="email" maxlength="100" required pattern="^.{1,}$">
+                                    <input type="text" name="email" maxlength="100" required pattern="^.{1,}$" data-regex="<%=Regex.EMAIL%>">
                                     <span>이메일</span>
                                     <div class="xicon"><img src="/resources/images/icon_x.png"></div>
                                     <div class="checkicon"><img src="/resources/images/icon_check.png"></div>
@@ -35,7 +36,7 @@
                             </div>
                             <div class="name">
                                 <label>
-                                    <input type="text" name="name" maxlength="10" required pattern="^.{1,}$">
+                                    <input type="text" name="name" maxlength="10" required pattern="^.{1,}$" data-regex="<%=Regex.NAME%>">
                                     <span>이름</span>
                                     <div class="xicon"><img src="/resources/images/icon_x.png"></div>
                                     <div class="checkicon"><img src="/resources/images/icon_check.png"></div>
@@ -43,7 +44,7 @@
                             </div>
                             <div class="nickname">
                                 <label>
-                                    <input type="text" name="nickname" maxlength="20" required pattern="^.{1,}$">
+                                    <input type="text" name="nickname" maxlength="20" required pattern="^.{1,}$" data-regex="<%=Regex.NICKNAME%>">
                                     <span>별명</span>
                                     <div class="xicon"><img src="/resources/images/icon_x.png"></div>
                                     <div class="checkicon"><img src="/resources/images/icon_check.png"></div>
@@ -51,7 +52,7 @@
                             </div>
                             <div class="password">
                                 <label>
-                                    <input type="password" name="password" maxlength="100" required pattern="^.{1,}$">
+                                    <input type="password" name="password" maxlength="100" required pattern="^.{1,}$" data-regex="<%=Regex.PASSWORD%>">
                                     <span>비밀번호</span>
                                     <div class="xicon"><img src="/resources/images/icon_x.png"></div>
                                     <div class="checkicon"><img src="/resources/images/icon_check.png"></div>
@@ -59,7 +60,7 @@
                             </div>
                             <div class="passwordCheck">
                                 <label>
-                                    <input type="password" name="passwordCheck" maxlength="100" required pattern="^.{1,}$">
+                                    <input type="password" name="passwordCheck" maxlength="100" required pattern="^.{1,}$" data-regex="<%=Regex.PASSWORD%>">
                                     <span>비밀번호확인</span>
                                     <div class="xicon"><img src="/resources/images/icon_x.png"></div>
                                     <div class="checkicon"><img src="/resources/images/icon_check.png"></div>
@@ -67,7 +68,7 @@
                             </div>
                             <div class="security">
                                 <label>
-                                    <input type="text" name="security" maxlength="10" required pattern="^.{1,}$">
+                                    <input type="text" name="security" maxlength="10" required pattern="^.{1,}$" data-regex="<%=Regex.SECURITY_CODE%>">
                                     <span>확인코드</span>
                                     <div class="xicon"><img src="/resources/images/icon_x.png"></div>
                                     <div class="checkicon"><img src="/resources/images/icon_check.png"></div>

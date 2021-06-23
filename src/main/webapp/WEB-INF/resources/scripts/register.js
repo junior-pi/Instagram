@@ -1,8 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
     const registerForm = window.document.getElementById('registerForm');
+    const inputs = registerForm.querySelectorAll('input');
     registerForm.onsubmit = () => {
-        let inputs = registerForm.querySelectorAll('input');
-        for (let i = 0; i < inputs.length; i++) {
+        for (let i = 0; i < inputs.length - 1; i++) {
             let input = inputs[i];
             if (input.dataset.regex !== undefined) {
                 let regex = new RegExp(input.dataset.regex);
@@ -16,7 +16,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const registerInput = registerForm.querySelectorAll(':scope > input');
 // TODO : addeventlistener 'blur' >> AJAX >> email, nickname, securityCode
 
 });
