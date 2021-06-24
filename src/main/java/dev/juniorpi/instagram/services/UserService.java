@@ -39,5 +39,13 @@ public class UserService {
             return;
         }
         UserDto user = this.userMapper.selectUser(loginVo);
+        if (user == null) {
+            loginVo.setResult(LoginResult.FAILURE);
+        }
+        if (user.getLevel() == 10) {
+            loginVo.setResult(LoginResult.UNAVAILABLE);
+        }
+        loginVo.setResult(LoginResult.SUCCESS);
+        loginVo.setUser(user);
     }
 }

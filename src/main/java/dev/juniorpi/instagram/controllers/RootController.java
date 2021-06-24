@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @RequestMapping(value = "/")
-public class RootController {
+public class RootController extends StandardController {
     @RequestMapping(
             value = "/",
             method = RequestMethod.GET,
