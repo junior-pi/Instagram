@@ -24,7 +24,7 @@
                         <img src="/resources/images/instagram_logo_text.png">
                         <strong class="text">친구들의 사진과 동영상을 보려면 가입하세요.</strong>
                         <div class="line"></div>
-                        <form>
+                        <form method="post">
                             <div class="email">
                                 <label>
                                     <span hidden>이메일</span>
@@ -80,7 +80,7 @@
                     </div>
                     <div class="login">
                         계정이 있으신가요?&nbsp;&nbsp;
-                        <a href="login"><strong>로그인</strong></a>
+                        <a href="/user/login"><strong>로그인</strong></a>
                     </div>
                 </div>
             </div>

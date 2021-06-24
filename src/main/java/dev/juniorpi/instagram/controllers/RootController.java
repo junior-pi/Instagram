@@ -15,20 +15,4 @@ public class RootController {
     public String RootGet() {
         return "user/login";
     }
-
-    @RequestMapping(
-            value = "/login",
-            method = RequestMethod.GET,
-            produces = MediaType.TEXT_HTML_VALUE)
-    public String LoginGet() {
-        return "user/login";
-    }
-
-    @RequestMapping(
-            value = "/register",
-            method = RequestMethod.GET,
-            produces = MediaType.TEXT_HTML_VALUE)
-    public String RegisterGet() {
-       return "user/register";
-    }
 }
