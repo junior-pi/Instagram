@@ -29,6 +29,14 @@ public class RootController {
             method = RequestMethod.GET,
             produces = MediaType.TEXT_HTML_VALUE)
     public String RegisterGet() {
-       return "user/register";
+        return "user/register";
+    }
+
+    @RequestMapping(
+            value = "/feed",
+            method = RequestMethod.GET,
+            produces = MediaType.TEXT_HTML_VALUE)
+    public String FeedGet() {
+        return "board/feed";
     }
 }
