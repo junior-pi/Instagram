@@ -24,7 +24,7 @@ header > form > label {
     width: 15rem;
 }
 
- header > form > label > input {
+header > form > label > input {
     width: 100%;
     background-color: #fafafa;
     border: 0.0625rem solid #dbdbdb;
@@ -37,23 +37,23 @@ header > form > label {
     text-align: center;
 }
 
- header > form > label > input:valid,
-  header > form > label > input:focus {
+header > form > label > input:valid,
+header > form > label > input:focus {
     padding-left: 1.6rem;
     text-align: left;
 }
 
-  header > form > label > input:valid + span.holder,
-  header > form > label > input:focus + span.holder {
+header > form > label > input:valid + span.holder,
+header > form > label > input:focus + span.holder {
     left: 0.5rem;
     transform: translate(0, -50%);
 }
 
-  header > form > label > input:valid + span.holder > span {
+header > form > label > input:valid + span.holder > span {
     display: none;
 }
 
-  header > form > label > span.holder {
+header > form > label > span.holder {
     top: 50%;
     left: 50%;
     align-items: center;
@@ -65,12 +65,12 @@ header > form > label {
     transform: translate(-50%, -50%);
 }
 
-  header > form > label > span.holder > img {
+header > form > label > span.holder > img {
     height: 1rem;
     margin-right: 0.2rem;
 }
 
-  header > form > label > span.holder > span {
+header > form > label > span.holder > span {
     top: -0.0625rem;
     color: #a0a0a0;
     line-height: 100%;
@@ -78,7 +78,7 @@ header > form > label {
     position: relative;
 }
 
-  header > div {
+header > div {
     left: 50%;
     width: 100%;
     max-width: var(--width);
@@ -90,26 +90,26 @@ header > form > label {
     transform: translate(-50%);
 }
 
-  header > div > img {
+header > div > img {
     height: 2rem;
 }
 
-  header > div > div.spring {
+header > div > div.spring {
     flex: 1;
 }
 
-  header > div > ul {
+header > div > ul {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-  header > div > ul > li:not(:last-child) {
+header > div > ul > li:not(:last-child) {
     margin-right: 1.375rem;
 }
 
-  header > div > ul > li > a {
+header > div > ul > li > a {
     width: 1.5rem;
     height: 1.5rem;
     align-items: center;
@@ -117,16 +117,16 @@ header > form > label {
     justify-content: center;
 }
 
-  header > div > ul > li > a > img {
+header > div > ul > li > a > img {
     height: 100%;
 }
 
-  header > div > ul > li.profile > a {
+header > div > ul > li.profile > a {
     background-color: #e0e5ea;
     border-radius: 50%;
     overflow: hidden;
 }
 
-  header > div > ul > li.profile > a > img {
+header > div > ul > li.profile > a > img {
     height: 75%;
 }

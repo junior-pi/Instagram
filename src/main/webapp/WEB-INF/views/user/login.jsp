@@ -9,7 +9,7 @@
     <title>Instagram login</title>
     <link rel="stylesheet" href="/resources/stylesheets/common.css">
     <link rel="stylesheet" href="/resources/stylesheets/user/login.css">
-    <link rel="shortcut icon" href="resources/images/instagram_logo.png">
+    <link rel="shortcut icon" href="/resources/images/instagram_logo.png">
     <script src="/resources/scripts/login.js"></script>
 </head>
 <body class="user-login">

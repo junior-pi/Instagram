@@ -30,7 +30,7 @@ public class UserController extends StandardController {
             produces = MediaType.TEXT_HTML_VALUE)
     public String loginGet(@ModelAttribute(UserDto.MODEL_NAME) UserDto user) {
         if (user != null) {
-            return "user/main";
+            return "board/feed";
         }
         return "user/login";
     }
@@ -46,7 +46,7 @@ public class UserController extends StandardController {
         this.userService.login(loginVo);
         if (loginVo.getResult() == LoginResult.SUCCESS) {
             model.addAttribute(UserDto.MODEL_NAME, loginVo.getUser());
-            return "user/main";
+            return "board/feed";
         } else {
             model.addAttribute("vo", loginVo);
             return "user/login";

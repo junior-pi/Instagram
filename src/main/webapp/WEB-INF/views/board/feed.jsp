@@ -7,9 +7,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Instagram</title>
-    <link rel="shortcut icon" href="resources/images/instagram_logo.png">
-    <link rel="stylesheet" href="resources/stylesheets/board/feed.css">
-    <link rel="stylesheet" href="resources/stylesheets/board/header.css">
+    <link rel="shortcut icon" href="/resources/images/instagram_logo.png">
+    <link rel="stylesheet" href="/resources/stylesheets/board/feed.css">
+    <link rel="stylesheet" href="/resources/stylesheets/board/header.css">
 </head>
 <body>
 <%@include file="/WEB-INF/parts/header.jsp"%>
