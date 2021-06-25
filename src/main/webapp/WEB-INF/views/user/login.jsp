@@ -9,7 +9,7 @@
     <title>Instagram login</title>
     <link rel="stylesheet" href="/resources/stylesheets/common.css">
     <link rel="stylesheet" href="/resources/stylesheets/user/login.css">
-    <link rel="shortcut icon" href="resources/images/instagram_logo.png">
+    <link rel="shortcut icon" href="/resources/images/instagram_logo.png">
     <script src="/resources/scripts/login.js"></script>
 </head>
 <body class="user-login">
@@ -18,11 +18,11 @@
         <section>
             <div>
                 <div class="photo">
-                    <img src="resources/images/iphone.png">
+                    <img src="/resources/images/iphone.png">
                 </div>
                 <div class="main_right">
                     <div class="login">
-                        <img src="resources/images/instagram_logo_text.png">
+                        <img src="/resources/images/instagram_logo_text.png">
                         <form>
                             <div class="email">
                                 <label>
