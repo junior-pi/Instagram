@@ -50,4 +50,8 @@ public class UserService {
         this.userMapper.insertUser(registerVo);
         registerVo.setResult(RegisterResult.SUCCESS);
     }
+
+    public void sendSecurityCode() {
+
+    }
 }

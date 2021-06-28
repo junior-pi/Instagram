@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dev.juniorpi.instagram.mappers.IUserMapper">
+    <select id="selectEmailCount" resultType="_int">
+        SELECT COUNT(`index`)
+        FROM `instagram`.`users`
+        WHERE `email` = #{email}
+    </select>
+
+    <select id="selectNicknameCount" resultType="_int">
+        SELECT COUNT(`index`)
+        FROM `instagram`.`users`
+        WHERE `nickname` = #{nickname}
+    </select>
+
+    <insert id="insertUser" parameterType="dev.juniorpi.instagram.vos.user.RegisterVo">
+        INSERT INTO `instagram`.`users` (`email`, `name`, `nickname`, `password`)
+        VALUES (#{email}, #{name}, #{nickname}, #{password})
+    </insert>
+</mapper>
