@@ -1,6 +1,5 @@
 :root {
     --width: 60rem;
-
 }
 
 a:link, a:visited {
@@ -139,7 +138,7 @@ body > main > div > section > div.content > span.like {
 }
 
 body > main > div > section > div.content > span.content {
-    font: 0.8rem;
+    font-size: 0.8rem;
 }
 
 body > main > div > section > form {

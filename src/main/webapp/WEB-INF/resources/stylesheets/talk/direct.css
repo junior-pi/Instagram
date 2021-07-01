@@ -1,0 +1,4 @@
+header > div > ul > li > a:active > img:first-child {
+    display: none;
+}
+

@@ -5,6 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.print.attribute.standard.Media;
+
 @Controller
 @RequestMapping(value = "/")
 public class RootController {
@@ -38,5 +40,13 @@ public class RootController {
             produces = MediaType.TEXT_HTML_VALUE)
     public String FeedGet() {
         return "board/feed";
+    }
+
+    @RequestMapping(
+            value = "/direct",
+            method = RequestMethod.GET,
+            produces = MediaType.TEXT_HTML_VALUE)
+    public String DirectGet() {
+        return "talk/direct";
     }
 }
