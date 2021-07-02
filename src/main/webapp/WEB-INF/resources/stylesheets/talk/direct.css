@@ -1,4 +1,23 @@
-header > div > ul > li > a:active > img:first-child {
-    display: none;
+body > main {
+    top: 6rem;
+    left: 50%;
+    width: var(--width);
+    height: 52.5rem;
+    min-height: calc(100% - 8rem);
+    align-items: flex-start;
+    position: relative;
+    transform: translate(-50%);
+    background-color: #ffffff;
+    border: 0.0625rem solid #dbdbdb;
 }
+
+body > main > div > section > div.left {
+    width: 22.2rem;
+    height: 100%;
+    position: absolute;
+    border-right: 0.0625rem solid #dbdbdb;
+}
+
+
+
 

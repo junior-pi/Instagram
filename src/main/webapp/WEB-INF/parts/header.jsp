@@ -5,7 +5,7 @@
             <span hidden>검색</span>
             <input maxlength="50" name="keyword" type="text" required pattern="^[ㄱ-ㅎ|가-힣|a-z|A-Z|0-9|]{1,}$">
             <span class="holder">
-                    <img alt src="/resources/board/images/search.png">
+                    <img alt src="/resources/images/board/search.png">
                     <span>검색</span>
                 </span>
         </label>

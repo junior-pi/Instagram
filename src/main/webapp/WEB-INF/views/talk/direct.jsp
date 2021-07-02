@@ -21,7 +21,6 @@
                 <img src="/resources/images/talk/send_message.png">
                 <div ></div>
             </div>
-
         </section>
     </div>
 </main>
