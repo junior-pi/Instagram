@@ -12,16 +12,24 @@
     <link rel="stylesheet" href="/resources/stylesheets/board/header.css">
 </head>
 <body>
-<%@ include file="/WEB-INF/parts/header.jsp"%>
+<%@ include file="/WEB-INF/parts/header.jsp" %>
 <main>
     <div>
         <section>
             <div class="left">
-                <span>user</span>
-                <img src="/resources/images/talk/send_message.png">
-                <div ></div>
+                <div class="user">
+                    <span>nickname</span>
+                    <a>
+                        <img src="/resources/images/talk/send_message.png">
+                    </a>
+                </div>
+                <div class="friend">
+                    <a href="#">
+                        <img src="/resources/images/board/user.png">
+                        <span>nickname</span>
+                    </a>
+                </div>
             </div>
-
         </section>
     </div>
 </main>

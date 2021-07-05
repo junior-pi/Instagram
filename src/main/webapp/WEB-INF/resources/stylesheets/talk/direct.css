@@ -1,4 +1,66 @@
-header > div > ul > li > a:active > img:first-child {
+body > header > div > ul > li:first-child > a > img:last-child,
+body > header > div > ul > li:nth-child(2) > a > img:first-child,
+body > header > div > ul > li:nth-child(3) > a > img:last-child,
+body > header > div > ul > li:nth-child(4) > a > img:last-child {
     display: none;
 }
 
+body > main {
+    top: 6rem;
+    left: 50%;
+    width: var(--width);
+    height: 41.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+
+    position: relative;
+    transform: translate(-50%);
+}
+
+body > main > div {
+    flex: 1;
+}
+
+
+body > main > div > section {
+    width: 100%;
+    height: 100%;
+    border: 0.0625rem solid #dbdbdb;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+body > main > div > section > .left {
+    width: 21rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    border-right: 0.0625rem solid #dbdbdb;
+}
+
+body > main > div > section > .left > div.user {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.0625rem solid #dbdbdb;
+}
+
+body > main > div > section > .left > div.user > a > img {
+    width: 2rem;
+    height: 2.2rem;
+    right: 1rem;
+    position: relative;
+}
+
+body > main > div > section > .left > div.user > span {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
