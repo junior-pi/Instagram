@@ -34,7 +34,6 @@ body > main {
     align-items: flex-start;
     display: flex;
     justify-content: flex-start;
-
     word-break: break-all;
     position: relative;
     transform: translate(-50%);
