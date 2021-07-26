@@ -1,3 +1,4 @@
+<%@ page import="dev.juniorpi.instagram.securities.Regex" %>
 <%@ page language="java" contentType="text/html" pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
 <!DOCTYPE HTML>
 <html lang="ko">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="/resources/stylesheets/common.css">
     <link rel="stylesheet" href="/resources/stylesheets/user/register.css">
     <link rel="shortcut icon" href="/resources/images/instagram_logo.png">
+    <script src="/resources/scripts/user/register.js"></script>
 </head>
 <body>
 <main>
