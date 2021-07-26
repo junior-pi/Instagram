@@ -1,7 +1,9 @@
 package dev.juniorpi.instagram.controllers;
 
+import dev.juniorpi.instagram.dtos.UserDto;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -10,19 +12,16 @@ import javax.print.attribute.standard.Media;
 @Controller
 @RequestMapping(value = "/")
 public class RootController extends StandardController {
+//    TODO: ROOTController 에는 GET메서드들만?? USER에는 POST만?
+
     @RequestMapping(
             value = "/",
             method = RequestMethod.GET,
             produces = MediaType.TEXT_HTML_VALUE)
-    public String RootGet() {
-        return "user/login";
-    }
-
-    @RequestMapping(
-            value = "/login",
-            method = RequestMethod.GET,
-            produces = MediaType.TEXT_HTML_VALUE)
-    public String LoginGet() {
+    public String rootGet(@ModelAttribute(UserDto.MODEL_NAME) UserDto user) {
+        if (user != null) {
+            return "board/feed";
+        }
         return "user/login";
     }
 
@@ -39,6 +38,7 @@ public class RootController extends StandardController {
             method = RequestMethod.GET,
             produces = MediaType.TEXT_HTML_VALUE)
     public String FeedGet() {
+//        USER == null 이면 loginGET 으로 돌리기
         return "board/feed";
     }
 

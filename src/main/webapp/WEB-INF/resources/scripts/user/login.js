@@ -10,4 +10,11 @@ window.addEventListener('DOMContentLoaded', () => {
             loginSubmit.setAttribute('disabled', '');
         }
     })
+
+    loginSubmit.addEventListener('blur', () => {
+        const callback = ()=> {};
+        const fallback = ()=> {};
+        const formData = new FormData();
+        Ajax.request();
+    })
 });
