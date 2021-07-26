@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dev.juniorpi.instagram.mappers.IUserMapper">
+    <select id="selectUser"
+            resultType="dev.juniorpi.instagram.dtos.UserDto"
+            parameterType="dev.juniorpi.instagram.vos.LoginVo">
+        SELECT `index`    AS `index`,
+               `email`    AS `email`,
+               `name`     AS `name`,
+               `nickname` AS `nickname`,
+               `password` AS `password`,
+               `level`    AS `level`
+        FROM `instagram`.`users`
+        WHERE `email` = #{email}
+          AND `password` = #{password}
+    </select>
+</mapper>

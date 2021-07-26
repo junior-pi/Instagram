@@ -1,0 +1,13 @@
+body > main {
+    top: 6rem;
+    left: 50%;
+    width: var(--width);
+    min-height: calc(100% - 8rem);
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+
+    word-break: break-all;
+    position: relative;
+    transform: translate(-50%);
+}
