@@ -15,4 +15,20 @@
         WHERE `email` = #{email}
           AND `password` = #{password}
     </select>
+    <select id="selectEmailCount" resultType="_int">
+        SELECT COUNT(`index`)
+        FROM `instagram`.`users`
+        WHERE `email` = #{email}
+    </select>
+
+    <select id="selectNicknameCount" resultType="_int">
+        SELECT COUNT(`index`)
+        FROM `instagram`.`users`
+        WHERE `nickname` = #{nickname}
+    </select>
+
+    <insert id="insertUser" parameterType="dev.juniorpi.instagram.vos.user.RegisterVo">
+        INSERT INTO `instagram`.`users` (`email`, `name`, `nickname`, `password`)
+        VALUES (#{email}, #{name}, #{nickname}, #{password})
+    </insert>
 </mapper>

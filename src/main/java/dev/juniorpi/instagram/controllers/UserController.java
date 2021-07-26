@@ -1,8 +1,8 @@
 package dev.juniorpi.instagram.controllers;
 
+import dev.juniorpi.instagram.services.UserService;
 import dev.juniorpi.instagram.dtos.UserDto;
 import dev.juniorpi.instagram.enums.LoginResult;
-import dev.juniorpi.instagram.services.UserService;
 import dev.juniorpi.instagram.vos.LoginVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -17,6 +17,13 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 @RequestMapping(value = "/user/")
 @SessionAttributes(UserDto.MODEL_NAME)
 public class UserController extends StandardController {
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+@RequestMapping(value = "/user/")
+public class UserController {
     private final UserService userService;
 
     @Autowired
@@ -55,6 +62,20 @@ public class UserController extends StandardController {
 
     @RequestMapping(
             value = "/register",
+            method = RequestMethod.POST,
+            produces = MediaType.TEXT_HTML_VALUE)
+    public String registerPost(RegisterVo registerVo, Model model) {
+        this.userService.register(registerVo);
+        System.console();
+        if (registerVo.getResult() == RegisterResult.SUCCESS) {
+            return "user/login";
+        } else {
+            model.addAttribute("vo", registerVo);
+            return "user/register";
+        }
+    }
+}
+
             method = RequestMethod.GET,
             produces = MediaType.TEXT_HTML_VALUE)
     public String registerGet() {

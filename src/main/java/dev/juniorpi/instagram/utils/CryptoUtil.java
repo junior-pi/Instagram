@@ -15,6 +15,15 @@ public class CryptoUtil {
             }
         }
 
+
+        public static String hash(String input, String fallback, boolean toUpper) {
+            try {
+                return Sha512.hash(input, toUpper);
+            } catch (Exception ignored) {
+                return fallback;
+            }
+        }
+
         public static String hash(String input) throws NoSuchAlgorithmException {
             return Sha512.hash(input, false);
         }
@@ -25,9 +34,13 @@ public class CryptoUtil {
             messageDigest.reset();
             messageDigest.update(input.getBytes(StandardCharsets.UTF_8));
             output = String.format("%0128x", new BigInteger(1, messageDigest.digest()));
-            return toUpper ? output.toUpperCase() : output.toLowerCase();
+            return toUpper ?
+                    output.toUpperCase() :
+                    output.toLowerCase();
         }
     }
 
-    private CryptoUtil() {}
+    private CryptoUtil() {
+
+    }
 }
