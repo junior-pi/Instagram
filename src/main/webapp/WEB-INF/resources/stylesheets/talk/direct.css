@@ -1,0 +1,123 @@
+
+body > header > div > ul > li:first-child > a > img:last-child,
+body > header > div > ul > li:nth-child(2) > a > img:first-child,
+body > header > div > ul > li:nth-child(3) > a > img:last-child,
+body > header > div > ul > li:nth-child(4) > a > img:last-child {
+    display: none;
+}
+
+
+input {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    font: inherit;
+}
+
+
+
+body > main {
+
+    left: 50%;
+    width: var(--width);
+    display: flex;
+    justify-content: flex-start;
+    background-color: #ffffff;
+
+    position: relative;
+    transform: translate(-50%);
+}
+
+body > main > div {
+    flex: 1;
+}
+
+
+body > main > div > section {
+    width: 100%;
+    height: 100%;
+    border: 0.0625rem solid #dbdbdb;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+body > main > div > section > .left {
+    width: 21rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    border-right: 0.0625rem solid #dbdbdb;
+    box-sizing: border-box;
+}
+
+body > main > div > section > .left > div.user {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.0625rem solid #dbdbdb;
+}
+
+body > main > div > section > .left > div.user > a {
+    width: 1.7rem;
+    height: 1.9rem;
+    right: 1rem;
+    position: relative;
+}
+
+body > main > div > section > .left > div.user > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+body > main > div > section > .left > div.user > span {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+body > main > div > section > div.left > div.friend {
+    margin-top: 0.8rem;
+}
+
+
+body > main > div > section > div.left > div.friend > ul > li > a {
+    width: auto;
+    padding: 0.4rem 0 0.4rem 1.1rem;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+body > main > div > section > div.left > div.friend > ul > li > a:hover {
+    background-color: #FAFAFA;
+}
+
+body > main > div > section > div.left > div.friend > ul > li > a > div {
+    margin-left: 0.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+body > main > div > section > div.left > div.friend > ul > li > a > div > span:first-child {
+    font-size: 0.79rem;
+}
+
+body > main > div > section > div.left > div.friend > ul > li > a > div > span:last-child {
+    color: #a0a0a0;
+    font-size: 0.8rem;
+}
+
+
+body > main > div > section > div.left > div.friend > ul > li > a > img {
+    background-color: #e0e5ea;
+    border-radius: 50%;
+    width: 3.3rem;
+    height: 3.3rem;
+}

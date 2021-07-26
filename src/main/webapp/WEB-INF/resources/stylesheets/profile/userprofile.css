@@ -1,0 +1,36 @@
+body > header > div > ul > li:first-child > a > img:last-child,
+body > header > div > ul > li:nth-child(2) > a > img:last-child,
+body > header > div > ul > li:nth-child(3) > a > img:last-child,
+body > header > div > ul > li:nth-child(4) > a > img:last-child {
+    display: none;
+}
+
+body > main {
+    left: 50%;
+    width: var(--width);
+    background-color: #ffffff;
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    word-break: break-all;
+    position: relative;
+    transform: translate(-50%);
+}
+
+body > main > div > div.head {
+    display: flex;
+
+}
+
+body > main > div > div.head > div.right > div:first-child {
+    display: flex;
+}
+
+body > main > div > div.head > div.right > div:first-child > h2 {
+    font-weight: lighter;
+}
+
+body > body > main > div > div.head > div.right > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}

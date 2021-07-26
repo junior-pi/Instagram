@@ -10,29 +10,34 @@
     <link rel="shortcut icon" href="/resources/images/instagram_logo.png">
     <link rel="stylesheet" href="/resources/stylesheets/board/feed.css">
     <link rel="stylesheet" href="/resources/stylesheets/board/header.css">
+    <link rel="stylesheet" href="/resources/stylesheets/common.css">
 </head>
 <body>
-<%@include file="/WEB-INF/parts/header.jsp"%>
+<%@ include file="/WEB-INF/parts/header.jsp" %>
 <main>
     <div>
         <section>
             <div class="head">
                 <a href="#">
-                    <img alt src="resources/images/board/user.png">
+                    <img alt src="/resources/images/board/user.png">
                     <span>Someone</span>
                 </a>
+                <div class="spring"></div>
+                <a href="direct">
+                    <img alt src="/resources/images/board/direct_line.png">
+                </a>
             </div>
-            <img alt src="resources/images/board/sample.jpg">
+            <img alt src="/resources/images/board/sample.jpg">
             <div class="status">
                 <ul>
                     <li>
                         <a href="#">
-                            <img alt src="resources/images/board/research_line.png">
+                            <img alt src="/resources/images/board/research_line.png">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img alt src="resources/images/board/direct_line.png">
+                            <img alt src="/resources/images/board/like_line.png">
                         </a>
                     </li>
                 </ul>
@@ -40,7 +45,7 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <img alr src="resources/images/board/like_line.png">
+                            <img alt src="/resources/images/board/bookmark_line.png">
                         </a>
                     </li>
                 </ul>
@@ -60,21 +65,21 @@
         <section>
             <div class="head">
                 <a href="#">
-                    <img alt src="resources/images/board/user.png">
+                    <img alt src="/resources/images/board/user.png">
                     <span>Someone</span>
                 </a>
             </div>
-            <img alt src="resources/images/board/sample.jpg">
+            <img alt src="/resources/images/board/sample.jpg">
             <div class="status">
                 <ul>
                     <li>
                         <a href="#">
-                            <img alt src="resources/images/board/research_line.png">
+                            <img alt src="/resources/images/board/research_line.png">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img alt src="resources/images/board/direct_line.png">
+                            <img alt src="/resources/images/board/direct_line.png">
                         </a>
                     </li>
                 </ul>
@@ -82,7 +87,7 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <img alr src="resources/images/board/like_line.png">
+                            <img alr src="/resources/images/board/like_line.png">
                         </a>
                     </li>
                 </ul>
@@ -103,7 +108,7 @@
     <aside>
         <div class="user">
             <a href="#">
-                <img src="resources/images/board/user.png">
+                <img src="/resources/images/board/user.png">
             </a>
             <a><span><strong>nickname</strong></span>
                 <span>name</span>

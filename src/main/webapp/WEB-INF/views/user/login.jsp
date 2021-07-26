@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="/resources/stylesheets/common.css">
     <link rel="stylesheet" href="/resources/stylesheets/user/login.css">
     <link rel="shortcut icon" href="/resources/images/instagram_logo.png">
+    <script src="/resources/scripts/login.js"></script>
+    <link rel="shortcut icon" href="/resources/images/instagram_logo.png">
     <script src="/resources/scripts/user/login.js"></script>
 </head>
 <body class="user-login">
@@ -22,6 +24,8 @@
                 </div>
                 <div class="main_right">
                     <div class="login">
+                        <img src="/resources/images/instagram_logo_text.png">
+                        <form>
                         <img src="/resources/images/instagram_logo_text.png">
                         <form method="post">
                             <div class="email">
