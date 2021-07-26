@@ -1,3 +1,4 @@
+
 body > header > div > ul > li:first-child > a > img:last-child,
 body > header > div > ul > li:nth-child(2) > a > img:first-child,
 body > header > div > ul > li:nth-child(3) > a > img:last-child,
@@ -5,13 +6,22 @@ body > header > div > ul > li:nth-child(4) > a > img:last-child {
     display: none;
 }
 
+
+input {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    font: inherit;
+}
+
+
+
 body > main {
-    top: 6rem;
+
     left: 50%;
     width: var(--width);
-    height: 41.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: #ffffff;
 
     position: relative;
@@ -27,6 +37,7 @@ body > main > div > section {
     width: 100%;
     height: 100%;
     border: 0.0625rem solid #dbdbdb;
+    border-radius: 0.2rem;
     display: flex;
     justify-content: flex-start;
 
@@ -40,6 +51,7 @@ body > main > div > section > .left {
     justify-content: flex-start;
     position: absolute;
     border-right: 0.0625rem solid #dbdbdb;
+    box-sizing: border-box;
 }
 
 body > main > div > section > .left > div.user {
@@ -50,11 +62,16 @@ body > main > div > section > .left > div.user {
     border-bottom: 0.0625rem solid #dbdbdb;
 }
 
-body > main > div > section > .left > div.user > a > img {
-    width: 2rem;
-    height: 2.2rem;
+body > main > div > section > .left > div.user > a {
+    width: 1.7rem;
+    height: 1.9rem;
     right: 1rem;
     position: relative;
+}
+
+body > main > div > section > .left > div.user > a > img {
+    width: 100%;
+    height: 100%;
 }
 
 body > main > div > section > .left > div.user > span {
@@ -63,4 +80,44 @@ body > main > div > section > .left > div.user > span {
     position: relative;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+body > main > div > section > div.left > div.friend {
+    margin-top: 0.8rem;
+}
+
+
+body > main > div > section > div.left > div.friend > ul > li > a {
+    width: auto;
+    padding: 0.4rem 0 0.4rem 1.1rem;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+body > main > div > section > div.left > div.friend > ul > li > a:hover {
+    background-color: #FAFAFA;
+}
+
+body > main > div > section > div.left > div.friend > ul > li > a > div {
+    margin-left: 0.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+body > main > div > section > div.left > div.friend > ul > li > a > div > span:first-child {
+    font-size: 0.79rem;
+}
+
+body > main > div > section > div.left > div.friend > ul > li > a > div > span:last-child {
+    color: #a0a0a0;
+    font-size: 0.8rem;
+}
+
+
+body > main > div > section > div.left > div.friend > ul > li > a > img {
+    background-color: #e0e5ea;
+    border-radius: 50%;
+    width: 3.3rem;
+    height: 3.3rem;
 }

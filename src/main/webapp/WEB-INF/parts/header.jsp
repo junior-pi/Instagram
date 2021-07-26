@@ -34,8 +34,8 @@
             </li>
             <li>
                 <a href="#">
-                    <img src="/resources/images/board/like_line.png" alt="like">
-                    <img src="/resources/images/board/like_selected.png" alt="like">
+                    <img src="/resources/images/board/bookmark_line.png" alt="like">
+                    <img src="/resources/images/board/bookmark_selected.png" alt="like">
                 </a>
             </li>
             <li class="profile">

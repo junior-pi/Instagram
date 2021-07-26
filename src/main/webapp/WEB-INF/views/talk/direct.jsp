@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="/resources/images/instagram_logo.png">
     <link rel="stylesheet" href="/resources/stylesheets/talk/direct.css">
     <link rel="stylesheet" href="/resources/stylesheets/board/header.css">
+    <link rel="stylesheet" href="/resources/stylesheets/common.css">
 </head>
 <body>
 <%@ include file="/WEB-INF/parts/header.jsp" %>
@@ -19,15 +20,32 @@
             <div class="left">
                 <div class="user">
                     <span>nickname</span>
-                    <a>
+                    <a href="#">
                         <img src="/resources/images/talk/send_message.png">
                     </a>
                 </div>
                 <div class="friend">
-                    <a href="#">
-                        <img src="/resources/images/board/user.png">
-                        <span>nickname</span>
-                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="/resources/images/board/user.png">
+                                <div>
+                                    <span>nickname</span>
+                                    <span>메세지가 도착했습니다.</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/resources/images/board/user.png">
+                                <div>
+                                    <span>nickname</span>
+                                    <span>메세지가 도착했습니다.</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
                 </div>
             </div>
         </section>

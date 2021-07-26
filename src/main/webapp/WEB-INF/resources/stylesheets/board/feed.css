@@ -21,13 +21,8 @@ input {
     font: inherit;
 }
 
-body {
-    background-color: #fafafa;
-    margin: 0;
-}
 
 body > main {
-    top: 6rem;
     left: 50%;
     width: var(--width);
     min-height: calc(100% - 8rem);
@@ -48,7 +43,7 @@ body > main > div {
 body > main > div > section {
     background-color: #ffffff;
     border: 0.0625rem solid #dbdbdb;
-    border-radius: 0.125rem;
+    border-radius: 0.2rem;
     align-items: stretch;
     display: flex;
     flex-direction: column;
@@ -63,14 +58,14 @@ body > main > div > section > div.head {
     padding: 0.7rem;
 }
 
-body > main > div > section > div.head > a {
+body > main > div > section > div.head > a:first-child {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-body > main > div > section > div.head > a > img {
+body > main > div > section > div.head > a:first-child > img {
     height: 1.75rem;
     background-color: #a0a0a0;
     border-radius: 50%;
@@ -81,6 +76,14 @@ body > main > div > section > div.head > a > img {
 body > main > div > section > div.head > a > span {
     font-size: 0.8rem;
     font-weight: bold;
+}
+
+body > main > div > section > div.head > div.spring {
+    flex: 1;
+}
+
+body > main > div > section > div.head > a:last-child > img {
+    height: 1.75rem;
 }
 
 body > main > div > section > img {

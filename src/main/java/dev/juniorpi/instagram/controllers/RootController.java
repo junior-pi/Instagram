@@ -49,4 +49,12 @@ public class RootController {
     public String DirectGet() {
         return "talk/direct";
     }
+
+    @RequestMapping(
+            value = "/userprofile",
+            method = RequestMethod.GET,
+            produces = MediaType.TEXT_HTML_VALUE)
+    public String UserProfileGet() {
+        return "profile/userprofile";
+    }
 }
