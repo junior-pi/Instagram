@@ -13,6 +13,6 @@ public class RootController extends StandardController {
             method = RequestMethod.GET,
             produces = MediaType.TEXT_HTML_VALUE)
     public String rootGet() {
-        return "user/login";
+        return "redirect:user/login";
     }
 }

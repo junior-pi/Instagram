@@ -5,6 +5,7 @@ import dev.juniorpi.instagram.enums.LoginResult;
 import dev.juniorpi.instagram.mappers.IUserMapper;
 import dev.juniorpi.instagram.securities.Regexs;
 import dev.juniorpi.instagram.vos.LoginVo;
+import dev.juniorpi.instagram.vos.SelectVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -47,5 +48,9 @@ public class UserService {
         }
         loginVo.setResult(LoginResult.SUCCESS);
         loginVo.setUser(user);
+    }
+
+    public void select(SelectVo selectVo) {
+        return;
     }
 }

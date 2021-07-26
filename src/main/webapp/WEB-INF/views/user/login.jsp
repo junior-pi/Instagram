@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/resources/stylesheets/common.css">
     <link rel="stylesheet" href="/resources/stylesheets/user/login.css">
     <link rel="shortcut icon" href="/resources/images/instagram_logo.png">
-    <script src="/resources/scripts/login.js"></script>
+    <script src="/resources/scripts/user/login.js"></script>
 </head>
 <body class="user-login">
 <main>
