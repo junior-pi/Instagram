@@ -27,7 +27,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="/board/write/select">
                     <img src="/resources/images/board/write_line.png" alt="write">
                     <img src="/resources/images/board/write_selected.png" alt="write">
                 </a>

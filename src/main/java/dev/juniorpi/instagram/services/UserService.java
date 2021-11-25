@@ -2,6 +2,7 @@ package dev.juniorpi.instagram.services;
 
 import dev.juniorpi.instagram.dtos.UserDto;
 import dev.juniorpi.instagram.enums.LoginResult;
+import dev.juniorpi.instagram.mappers.IBoardMapper;
 import dev.juniorpi.instagram.mappers.IUserMapper;
 import dev.juniorpi.instagram.vos.LoginVo;
 import dev.juniorpi.instagram.vos.SelectVo;
@@ -11,13 +12,17 @@ import dev.juniorpi.instagram.vos.user.RegisterVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
+
 @Service
 public class UserService {
     private final IUserMapper userMapper;
+    private final IBoardMapper boardMapper;
 
     @Autowired
-    public UserService(IUserMapper userMapper) {
+    public UserService(IUserMapper userMapper, IBoardMapper boardMapper) {
         this.userMapper = userMapper;
+        this.boardMapper = boardMapper;
     }
 
     public static boolean checkEmail(String email) {
@@ -56,8 +61,12 @@ public class UserService {
         loginVo.setUser(user);
     }
 
-    public void select(SelectVo selectVo) {
-        return;
+    public void select(SelectVo selectVo) throws IOException {
+        boardMapper.insertFile(
+                selectVo.getFid(),
+                selectVo.getName(),
+                selectVo.getType(),
+                selectVo.getFile().getBytes());
     }
 
     public void register(RegisterVo registerVo) {

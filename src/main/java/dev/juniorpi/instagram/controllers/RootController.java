@@ -29,7 +29,7 @@ public class RootController extends StandardController {
             value = "/register",
             method = RequestMethod.GET,
             produces = MediaType.TEXT_HTML_VALUE)
-    public String RegisterGet() {
+    public String registerGet() {
         return "user/register";
     }
 
@@ -37,7 +37,7 @@ public class RootController extends StandardController {
             value = "/feed",
             method = RequestMethod.GET,
             produces = MediaType.TEXT_HTML_VALUE)
-    public String FeedGet() {
+    public String feedGet() {
 //        USER == null 이면 loginGET 으로 돌리기
         return "board/feed";
     }
@@ -46,15 +46,23 @@ public class RootController extends StandardController {
             value = "/direct",
             method = RequestMethod.GET,
             produces = MediaType.TEXT_HTML_VALUE)
-    public String DirectGet() {
+    public String directGet() {
         return "talk/direct";
+    }
+
+    @RequestMapping(
+            value = "/select",
+            method = RequestMethod.GET,
+            produces = MediaType.TEXT_HTML_VALUE)
+    public String selectGet() {
+        return "board/write/select";
     }
 
     @RequestMapping(
             value = "/userprofile",
             method = RequestMethod.GET,
             produces = MediaType.TEXT_HTML_VALUE)
-    public String UserProfileGet() {
+    public String userProfileGet() {
         return "profile/userprofile";
     }
 }

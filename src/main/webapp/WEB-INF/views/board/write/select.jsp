@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/resources/stylesheets/board/header.css">
     <link rel="stylesheet" href="/resources/stylesheets/board/write/select.css">
     <link rel="shortcut icon" href="/resources/images/instagram_logo.png">
-    <script src="/resources/scripts/ajax.js"></script>
+    <!-- <script src="/resources/scripts/class.ajax.js"></script> -->
     <script src="/resources/scripts/board/select.js"></script>
 </head>
 <body>
